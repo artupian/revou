@@ -70,9 +70,15 @@ img{
   text-align: center;
 }
 .cards .card .content .img{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin-bottom: 14px;
 }
 .card .content .img img{
-  height: 160px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
   object-fit: cover;
 }
 .program .card .content .title{
@@ -95,6 +101,23 @@ img{
     display: flex;
     align-items: center;
     text-align: center;
+  }
+  .main-card .cards .card{
+    width: 100%;
+  }
+  .cards .card .content{
+    flex-direction: row;
+    text-align: left;
+  }
+  .cards .card .details{
+    width: 100%;
+  }
+  .cards .card .content .img{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: 25%;
+    margin-right: 18px;
   }
   .container .main-card .program{
     width: 100%;

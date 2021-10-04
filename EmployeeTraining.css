@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* yellow: #FFDE3D; pink: #DE3078; orange: #FAAF34; */
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+img{
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+::selection{
+  background:	#FFDE3D;
+}
+.container{
+  max-width:;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 25px;
+}
+.program{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main-card{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  transition: 1s;
+}
+.container .main-card .cards{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .main-card .program{
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-card .program .card{
+  width: 100%;
+  margin: 20px;
+}
+.main-card .cards .card{
+  width: calc(100% / 2 - 20px);
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px;
+  margin: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  box-shadow: 0 0 10px rgba(255, 222, 61, 0.75);
+}
+.cards .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+}
+.card .content .img img{
+  height: 160px;
+  object-fit: cover;
+}
+.program .card .content .title{
+  font-size: 34px;
+  font-weight: bold;
+}
+.card .content .name{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card .content .job{
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+  .main-card{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .container .main-card .program{
+    width: 100%;
+  }
+  .main-card .program .card{
+    margin: 0px;
+  }
+  .container .main-card .cards{
+    width: 100%;
+  }

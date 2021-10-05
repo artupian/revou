@@ -3,8 +3,6 @@
 
 * {
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
@@ -17,6 +15,11 @@ img{
   -ms-user-select: none;
 }
 body {
+  margin: 0;
+  padding: 0;
+}
+::selection{
+  background:	#FFDE3D;
 }
 .container{
   width: 100%;
@@ -24,15 +27,14 @@ body {
 .carousel{
   height: 100%;
   width:100%;
-  padding: 10px;
 }
 .carousel-cell{
-  width: calc(100% / 2 - 30px);
+  width: calc(100% / 2 - 28px);
   height: auto;
   background: #fff;
   border-radius: 22px;
   padding: 36px;
-  margin: 16px;
+  margin: 10px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
   transition: all 0.4s ease;
   align-items: center;
@@ -41,7 +43,6 @@ body {
 .carousel-cell:hover{
   box-shadow: 0 0 8px #FFDE3D;
 }
-
 .carousel-cell.is-selected {
   background: #fff;
 }
@@ -69,13 +70,16 @@ body {
   font-size: 20px;
   margin-bottom:16px;
 }
-.details .name{
+.details .quotes b{
+  font-weight: 500;
+}
+.details .student{
   font-size: 20px;
   color: #FAAF34;
   font-weight: bold;
   margin-bottom: 6px;
 }
-.details .job{
+.details .position{
   font-size: 16px;
   color: #;
   margin-bottom: 10px;

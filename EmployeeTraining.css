@@ -2,6 +2,7 @@
 /* yellow: #FFDE3D; pink: #DE3078; orange: #FAAF34; */
 
 *{
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
@@ -13,14 +14,15 @@ img{
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 ::selection{
   background:	#FFDE3D;
 }
 .container{
-  max-width:;
   width: 100%;
-  overflow: hidden;
-  padding: 15px 25px;
 }
 .program{
   display: flex;
@@ -54,7 +56,7 @@ img{
   background: #fff;
   border-radius: 22px;
   padding: 18px;
-  margin: 10px;
+  margin: 8px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
   transition: all 0.4s ease;
 }
@@ -82,9 +84,17 @@ img{
   object-fit: cover;
 }
 .program .card .content .title{
-  font-size: 34px;
-  font-weight: bold;
+  color: #;
+  font-size: 28px;
+  font-weight: 600;
 }
+/*
+.program-highlight{
+  background: linear-gradient(120deg, #FFDE3D80 0%, #FFDE3D80 100%);
+  background-repeat: no-repeat;
+  background-size: 150% 60%;
+  background-position: 0 100%;
+}*/
 .card .content .name{
   font-size: 22px;
   font-weight: bold;
@@ -101,6 +111,7 @@ img{
     display: flex;
     align-items: center;
     text-align: center;
+    margin-bottom: 30px;
   }
   .main-card .cards .card{
     width: 100%;
@@ -116,7 +127,7 @@ img{
     margin-top: auto;
     margin-bottom: auto;
     height: auto;
-    width: 25%;
+    width: 50%;
     margin-right: 18px;
   }
   .container .main-card .program{
@@ -124,6 +135,12 @@ img{
   }
   .main-card .program .card{
     margin: 0px;
+    background-color: #FFDE3D;
+    border-radius: 16px;
+    padding: 6px;
+    margin: 8px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
   }
   .container .main-card .cards{
     width: 100%;

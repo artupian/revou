@@ -31,29 +31,29 @@ body{
   justify-content: center;
   align-items: center;
 }
-.container .main-card{
+.container .main-inst{
   display: flex;
   justify-content:center;
   width: 100%;
   transition: 1s;
 }
-.container .main-card .cards{
+.container .main-inst .instructor{
   width: 75%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.container .main-card .program{
+.container .main-inst .program{
   width: 25%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.main-card .program .card{
+.main-inst .program .card{
   width: 100%;
   margin: 20px;
 }
-.main-card .cards .card{
+.main-inst .instructor .card{
   width: calc(100% / 2 - 20px);
   background: #fff;
   border-radius: 22px;
@@ -62,10 +62,10 @@ body{
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
   transition: all 0.4s ease;
 }
-.main-card .cards .card:hover{
+.main-inst .instructor .card:hover{
   box-shadow: 0 0 10px rgba(255, 222, 61, 0.75);
 }
-.cards .content{
+.instructor .content{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -73,13 +73,13 @@ body{
   align-items: center;
   text-align: center;
 }
-.cards .card .content .img{
+.instructor .card .content .img{
   height: 160px;
   width: 160px;
   border-radius: 50%;
   margin-bottom: 14px;
 }
-.card .content .img img{
+.instructor .card .content .img img{
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -90,24 +90,17 @@ body{
   font-size: 28px;
   font-weight: 600;
 }
-/*
-.program-highlight{
-  background: linear-gradient(120deg, #FFDE3D80 0%, #FFDE3D80 100%);
-  background-repeat: no-repeat;
-  background-size: 150% 60%;
-  background-position: 0 100%;
-}*/
-.card .content .name{
+.instructor .card .content .name{
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.card .content .job{
+.instructor .card .content .job{
   font-size: 16px;
 }
 
 @media (max-width: 768px){
-  .main-card{
+  .main-inst {
     flex-direction: column;
     justify-content: center;
     display: flex;
@@ -115,27 +108,27 @@ body{
     text-align: center;
     margin-bottom: -10px;
   }
-  .main-card .cards .card{
+  .main-inst .instructor .card{
     width: 100%;
   }
-  .cards .card .content{
+  .instructor .card .content{
     flex-direction: row;
     text-align: left;
   }
-  .cards .card .details{
+  .instructor .card .details{
     width: 100%;
   }
-  .cards .card .content .img{
+  .instructor .card .content .img{
     margin-top: auto;
     margin-bottom: auto;
     height: auto;
     width: 50%;
     margin-right: 18px;
   }
-  .container .main-card .program{
+  .container .main-inst .program{
     width: 100%;
   }
-  .main-card .program .card{
+  .main-inst .program .card{
     margin: 0px;
     background-color: #FFDE3D;
     border-radius: 16px;
@@ -144,6 +137,6 @@ body{
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
     transition: all 0.4s ease;
   }
-  .container .main-card .cards{
+  .container .main-inst .instructor{
     width: 100%;
   }

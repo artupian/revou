@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* yellow: #FFDE3D; pink: #DE3078; orange: #FAAF34; */
+
+*{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+img{
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+::selection{
+  background:	#FFDE3D;
+}
+.container{
+  width: 100%;
+  padding: 15px 0 25px 0;
+  overflow: hidden;
+}
+.container .main-card{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  transition: 1s;
+}
+.container .main-card .usp,
+.container .main-card .dm-learn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-card .usp .card{
+  width: calc(100% / 5 - 15px);
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px;
+  margin: 6px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+.main-card .dm-learn .card{
+  width: calc(100% / 4 - 20px);
+  background: #FFF;
+  border-radius: 18px;
+  padding: 18px;
+  margin: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+.main-card .usp .card:hover,
+.main-card .dm-learn .card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 0 10px rgba(255, 222, 61, 0.75);
+}
+.usp .card .content,
+.dm-learn .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.usp .card .content .img{
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background: #;
+  margin-bottom: 14px;
+}
+.usp .card .content .img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.usp .card .content .title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.dm-learn .card .content .title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #DE3078;
+}
+.usp .card .content .desc{
+  font-size: 13px;
+}
+.dm-learn .card .content .desc{
+  font-size: 14px;
+}
+
+@media (max-width: 860px) {
+  .main-card .usp .card{
+    width: calc(100% / 2 - 20px);
+  }
+  .main-card .dm-learn .card{
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .main-card .usp .card{
+    width: 100%;
+  }
+  .main-card .dm-learn .card{
+    width: 100%;
+  }
+  .usp .card .content{
+    flex-direction: row;
+    text-align: left;
+  }
+  .usp .card .details{
+    width: 100%;
+  }
+  .usp .card .content .img{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: 25%;
+    margin-right: 18px;
+  }
+}

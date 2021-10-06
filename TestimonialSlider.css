@@ -14,7 +14,7 @@ img{
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-body {
+body{
   margin: 0;
   padding: 0;
 }
@@ -23,27 +23,29 @@ body {
 }
 .container{
   width: 100%;
+  padding: 15px 0 25px 0;
+  overflow: hidden;
 }
 .carousel{
   height: 100%;
-  width:100%;
+  width: 100%;
 }
-.carousel-cell{
-  width: calc(100% / 2 - 28px);
+.carousel-testimonial{
+  width: calc(100% / 2 - 30px);
   height: auto;
   background: #fff;
   border-radius: 22px;
   padding: 36px;
-  margin: 10px;
+  margin: 12px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
   transition: all 0.4s ease;
   align-items: center;
   text-align: center;
 }
-.carousel-cell:hover{
+.carousel-testimonial:hover{
   box-shadow: 0 0 8px #FFDE3D;
 }
-.carousel-cell.is-selected {
+.carousel-testimonial.is-selected {
   background: #fff;
 }
 .flickity-viewport {
@@ -58,7 +60,7 @@ body {
 .flickity-page-dots .dot.is-selected{
   width: 30px;
 }
-.carousel-cell .details{
+.carousel-testimonial .details{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -75,24 +77,24 @@ body {
 }
 .details .student{
   font-size: 20px;
-  color: #FAAF34;
+  color: #;
   font-weight: bold;
   margin-bottom: 6px;
 }
 .details .position{
   font-size: 16px;
-  color: #;
+  color: #FAAF34;
   margin-bottom: 10px;
 }
 .details .rating i{
-  font-size: 20px;
+  font-size: 22px;
   color: #FFDE3D;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 .details .avatar{
-  height: 110px;
-  width: 110px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   margin-bottom: 14px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
@@ -104,7 +106,7 @@ body {
   object-fit: cover;
 }
 @media (max-width: 768px) {
-  .carousel-cell {
-    width: calc(100% - 20px);
+  .carousel-testimonial {
+    width: calc(100% - 30px);
   }
 }

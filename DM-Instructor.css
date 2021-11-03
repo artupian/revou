@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* yellow: #FFDE3D; pink: #DE3078; orange: #FAAF34; */
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+img{
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+::selection{
+  background:	#FFDE3D;
+}
+.container{
+  width: 100%;
+  padding: 15px 0 25px 0;
+  overflow: hidden;
+}
+.carousel{
+  height: 100%;
+  width: 100%;
+}
+.carousel-DM-instructor{
+  width: calc(100% / 3 - 30px);
+  height: auto;
+  background: #fff;
+  border-radius: 22px;
+  padding: 36px;
+  margin: 12px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  align-items: center;
+  text-align: center;
+}
+.carousel-DM-instructor:hover{
+  box-shadow: 0 0 8px #FFDE3D;
+}
+.carousel-DM-instructor.is-selected {
+  background: #fff;
+}
+.flickity-viewport {
+  transition: height 0.2s;
+}
+.flickity-page-dots .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.flickity-page-dots .dot.is-selected{
+  width: 30px;
+}
+.carousel-DM-instructor .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.carousel-DM-instructor .content .img{
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+.carousel-DM-instructor .content .img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.carousel-DM-instructor .content .name{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.carousel-DM-instructor .content .job{
+  font-size: 16px;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
+@media (max-width: 768px) {
+  .carousel-DM-instructor {
+    width: calc(100% - 30px);
+  }
+}

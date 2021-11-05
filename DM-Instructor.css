@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 /* yellow: #FFDE3D; pink: #DE3078; orange: #FAAF34; */
 
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
 }
 img{
   user-drag: none;

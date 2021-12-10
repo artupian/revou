@@ -31,7 +31,7 @@ body{
 }
 .carousel-DM-MC-Instr-1{
   font-family: 'PT Sans', sans-serif;
-  width: calc(100% / 3 - 30px);
+  width: calc(100% - 30px);
   height: auto;
   background: #fff;
   border-radius: 22px;

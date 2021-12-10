@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 /* yellow: #FFDE3D; pink: #DE3078; orange: #FAAF34; */
 
 * {
@@ -31,6 +31,7 @@ body{
   width: 100%;
 }
 .carousel-DM-instructor{
+  font-family: 'PT Sans', sans-serif;
   width: calc(100% / 3 - 30px);
   height: auto;
   background: #fff;

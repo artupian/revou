@@ -29,7 +29,7 @@ body{
   height: 100%;
   width: 100%;
 }
-.carousel-DM-instructor{
+.carousel-DM-MC-Instr-1{
   font-family: 'PT Sans', sans-serif;
   width: calc(100% / 3 - 30px);
   height: auto;
@@ -41,10 +41,10 @@ body{
   align-items: center;
   text-align: center;
 }
-.carousel-DM-instructor:hover{
+.carousel-DM-MC-Instr-1:hover{
   box-shadow: 0 0 8px #FFDE3D;
 }
-.carousel-DM-instructor.is-selected {
+.carousel-DM-MC-Instr-1.is-selected {
   background: #fff;
 }
 .flickity-viewport {
@@ -59,7 +59,7 @@ body{
 .flickity-page-dots .dot.is-selected{
   width: 30px;
 }
-.carousel-DM-instructor .content{
+.carousel-DM-MC-Instr-1 .content{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,22 +67,22 @@ body{
   align-items: center;
   text-align: center;
 }
-.carousel-DM-instructor .content .img{
+.carousel-DM-MC-Instr-1 .content .img{
   height: 320px;
   width: 320px;
   margin-bottom: 14px;
 }
-.carousel-DM-instructor .content .img img{
+.carousel-DM-MC-Instr-1 .content .img img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.carousel-DM-instructor .content .name{
+.carousel-DM-MC-Instr-1 .content .name{
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.carousel-DM-instructor .content .job{
+.carousel-DM-MC-Instr-1 .content .job{
   font-size: 16px;
 }
 /* hide disabled button */
@@ -90,7 +90,7 @@ body{
   display: none;
 }
 @media (max-width: 768px) {
-  .carousel-DM-instructor {
+  .carousel-DM-MC-Instr-1 {
     width: calc(100% - 30px);
   }
 }
